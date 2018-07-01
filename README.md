@@ -1,0 +1,1 @@
+# node-red-contrib-simple-aws-sdk
