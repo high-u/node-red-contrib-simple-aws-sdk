@@ -76,7 +76,7 @@ npm install --save node-red-contrib-simple-aws-sdk
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "{\n    \"config\": {\n        \"accessKeyId\": \"AKXXXXXXXXXXXXXXXXNQ\",\n        \"secretAccessKey\": \"flxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxrF\",\n        \"region\": \"us-east-1\"\n    },\n    \"service\": \"Firehose\",\n    \"method\": \"putRecord\",\n    \"params\": {\n        \"DeliveryStreamName\": \"foo-51-sensor-raw-data-stream\",\n        \"Record\": {\n            \"Data\": \"foobar\\n\"\n        }\n    },\n    \"async\": false\n}\n",
+        "template": "{\n    \"config\": {\n        \"accessKeyId\": \"AKXXXXXXXXXXXXXXXXNQ\",\n        \"secretAccessKey\": \"flxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxrF\",\n        \"region\": \"us-east-1\"\n    },\n    \"service\": \"Firehose\",\n    \"method\": \"putRecord\",\n    \"params\": {\n        \"DeliveryStreamName\": \"foo-51-sensor-raw-data-stream\",\n        \"Record\": {\n            \"Data\": \"foobar\\n\"\n        }\n    }\n}\n",
         "output": "json",
         "x": 294,
         "y": 144,
