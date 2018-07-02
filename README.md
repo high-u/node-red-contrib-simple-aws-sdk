@@ -40,11 +40,10 @@ npm install --save node-red-contrib-simple-aws-sdk
 #### Params
 
 - msg.aws.params
-    - (Conform to AWS SDK.)
 
 ### Outputs
 
-#### nodemailer response
+#### AWS SDK Response
 
 - msg.payload
 
