@@ -6,6 +6,7 @@
 - Input all options.
 - Input values ​​conform to aws-sdk.
 - This can call plural services in one node.
+- Better to combine with [node-red-contrib-credentials](https://flows.nodered.org/node/node-red-contrib-credentials) or [node-red-contrib-process-env](https://flows.nodered.org/node/node-red-contrib-process-env).
 
 ## Released
 
