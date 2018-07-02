@@ -1,20 +1,5 @@
 <script type="text/x-red" data-template-name="simple-aws-sdk">
   <div class="form-row">
-      <label for="node-input-accesskey"><i class="fa fa-key"></i> Access Key</label>
-      <input type="text" id="node-input-accesskey" >
-      </input>
-  </div>
-  <div class="form-row">
-      <label for="node-input-secretkey"><i class="fa fa-user-secret"></i> Secret Key</label>
-      <input type="text" id="node-input-secretkey" >
-      </input>
-  </div>
-  <div class="form-row">
-    <label for="node-input-region"><i class="fa fa-map-pin"></i> Region</label>
-    <input type="text" id="node-input-region" >
-    </input>
-  </div>
-  <div class="form-row">
       <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
       <input type="text" id="node-input-name" placeholder="Name">
   </div>
@@ -54,10 +39,7 @@
       category: 'AWS',
       color: "#ffffff",
       defaults: {
-          name: {value: ""},
-          accesskey: {value: "AWS_SDK_ACCESS_KEY"},
-          secretkey: {value: "AWS_SDK_SECRET_KEY"},
-          region: {value: "AWS_SDK_REGION"}
+          name: {value: ""}
       },
       inputs:1,
       outputs:1,

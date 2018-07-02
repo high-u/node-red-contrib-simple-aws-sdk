@@ -43,6 +43,7 @@ aws-sdk
 
 ## Example
 
+![Example Flows](https://raw.githubusercontent.com/high-u/node-red-contrib-simple-aws-sdk/master/images/example-flows.png)
 
 ```
 [
