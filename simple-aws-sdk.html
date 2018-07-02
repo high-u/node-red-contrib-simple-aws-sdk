@@ -1,25 +1,21 @@
 <script type="text/x-red" data-template-name="simple-aws-sdk">
   <div class="form-row">
-      <label for="node-input-aws"><i class="fa fa-user"></i>AWS</label>
-      <input type="text" id="node-input-aws">
-  </div>
-  <div class="form-row input-bucket-row">
-      <label for="node-input-servicename"><i class="fa icon-tasks"></i>Service</label>
-      <input type="text" id="node-input-servicename" >
-      </input>
-  </div>
-  <div class="form-row input-bucket-row">
-      <label for="node-input-methodname"><i class="fa icon-filter"></i>Method</label>
-      <input type="text" id="node-input-methodname" >
-      </input>
-  </div>
-  <div class="form-row input-bucket-row">
-      <label for="node-input-operation"><i class="fa icon-filter"></i>Operation</label>
-      <input type="text" id="node-input-operation" >
+      <label for="node-input-accesskey"><i class="fa fa-key"></i> Access Key</label>
+      <input type="text" id="node-input-accesskey" >
       </input>
   </div>
   <div class="form-row">
-      <label for="node-input-name"><i class="fa fa-tag"></i>Name</label>
+      <label for="node-input-secretkey"><i class="fa fa-user-secret"></i> Secret Key</label>
+      <input type="text" id="node-input-secretkey" >
+      </input>
+  </div>
+  <div class="form-row">
+    <label for="node-input-region"><i class="fa fa-map-pin"></i> Region</label>
+    <input type="text" id="node-input-region" >
+    </input>
+  </div>
+  <div class="form-row">
+      <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
       <input type="text" id="node-input-name" placeholder="Name">
   </div>
 </script>
@@ -58,14 +54,17 @@
       category: 'AWS',
       color: "#ffffff",
       defaults: {
-          name: {value: ''}
+          name: {value: ""},
+          accesskey: {value: "AWS_SDK_ACCESS_KEY"},
+          secretkey: {value: "AWS_SDK_SECRET_KEY"},
+          region: {value: "AWS_SDK_REGION"}
       },
       inputs:1,
       outputs:1,
-      icon: "aws.png",
+      icon: "aws-sdk.png",
       align: "left",
       label: function() {
-          return this.name || "aws "+ this.servicename + " " + this.methodname;
+          return this.name || "aws sdk";
       }
  });
 </script>
