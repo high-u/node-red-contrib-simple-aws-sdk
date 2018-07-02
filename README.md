@@ -1,21 +1,27 @@
 # node-red-contrib-simple-aws-sdk
 
-aws-sdk
+## Feature
+
+- Package for [Node-RED](https://nodered.org).
+- Input all options.
+- Input values ​​conform to aws-sdk.
+- This can call plural services in one node.
+
+## Released
+
+|Date|Version|Description|
+|:--:|:--:|:--|
+|2018-07-01|0.0.1|Released|
+
+## Install
+
+```bash
+npm install --save node-red-contrib-simple-aws-sdk
+```
 
 ## Usage
 
 ### Inputs
-
-{
-    "params": {
-        "DeliveryStreamName": "foo-51-sensor-raw-data-stream",
-        "Record": {
-            "Data": "hogehoge\n"
-        }
-    },
-    "async": false
-}
-
 
 #### AWS.Config
 
@@ -25,15 +31,16 @@ aws-sdk
 
 #### Service
 
-- msg.aws.Service
+- msg.aws.service
 
 #### Method
 
-- msg.aws.Method
+- msg.aws.method
 
 #### Params
 
-
+- msg.aws.params
+    - (Conform to AWS SDK.)
 
 ### Outputs
 

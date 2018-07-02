@@ -6,30 +6,42 @@
 </script>
 
 <script type="text/x-red" data-help-name="simple-aws-sdk">
-<dl class="message-properties">
-  <dt>request</dt>
+<h3>Inputs</h3>
+<dl class="message-properties" style="display: block;">
+  <dt>AWS.Config</dt>
   <dd>
-      <ul>
-          <li>
-              <code>payload</code> - "params" of aws sdk examples.
-          </li>
-      </ul>
+    <ul>
+      <li><code>msg.aws.config.accessKeyId</code></li>
+      <li><code>msg.aws.config.secretAccessKey</code></li>
+      <li><code>msg.aws.config.region</code></li>
+    </ul>
+  </dd>
+  <dt>Service Name</dt>
+  <dd>
+    <ul>
+      <li><code>msg.aws.service</code></li>
+    </ul>
+  </dd>
+  <dt>Method Name</dt>
+  <dd>
+    <ul>
+      <li><code>msg.aws.method</code></li>
+    </ul>
+  </dd>
+  <dt>Params</dt>
+  <dd>
+    <ul>
+      <li><code>msg.aws.params</code></li>
+    </ul>
   </dd>
 </dl>
+<h3>Outputs</h3>
 <dl class="message-properties">
-  <dt>response</dt>
+  <dt>AWS SDK Response</dt>
   <dd>
-      <ul>
-          <li>
-              <code>payload</code> - "data" of aws sdk examples.
-          </li>
-          <li>
-              <code>err</code> - "err" of aws sdk examples.
-          </li>
-          <li>
-              <code>params</code> - "params" of aws sdk examples.
-          </li>
-      </ul>
+    <ul>
+      <li><code>payload</code></li>
+    </ul>
   </dd>
 </dl>
 </script>
